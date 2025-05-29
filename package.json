@@ -1,39 +1,39 @@
 {
-  "name": "popcorn", // Nome do projeto
-  "version": "1.0.0", // Versão do projeto
-  "main": "index.js", // Ponto de entrada principal do projeto (usado pelo Expo)
-  "scripts": { // Scripts que podem ser executados com 'npm run <script-name>' ou 'yarn <script-name>'
-    "start": "expo start", // Inicia o servidor de desenvolvimento do Expo
-    "android": "expo start --android", // Inicia o servidor de desenvolvimento e tenta abrir no emulador/dispositivo Android
-    "ios": "expo start --ios", // Inicia o servidor de desenvolvimento e tenta abrir no emulador/dispositivo iOS
-    "web": "expo start --web" // Inicia o servidor de desenvolvimento e tenta abrir no navegador web
+  "name": "popcorn",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web"
   },
-  "dependencies": { // Dependências de produção do projeto
-    "@expo/metro-runtime": "~5.0.4", // Runtime para o Metro bundler usado pelo Expo
-    "@expo/vector-icons": "^14.1.0", // Coleção de bibliotecas de ícones vetoriais para Expo
-    "@react-native-async-storage/async-storage": "2.1.2", // Armazenamento persistente assíncrono para React Native
-    "@react-navigation/bottom-tabs": "^7.3.13", // Navegação por abas inferiores para React Navigation
-    "@react-navigation/material-top-tabs": "^7.2.13", // Navegação por abas superiores no estilo Material para React Navigation
-    "@react-navigation/native": "^7.1.9", // Núcleo da biblioteca React Navigation
-    "@react-navigation/native-stack": "^7.3.13", // Navegação baseada em pilha para React Navigation
-    "expo": "~53.0.9", // SDK principal do Expo
-    "expo-dev-client": "~5.1.8", // Cliente de desenvolvimento do Expo (para builds de desenvolvimento)
-    "expo-navigation-bar": "~4.2.4", // API para controlar a barra de navegação do sistema no Android (Expo)
-    "expo-status-bar": "~2.2.3", // Componente para controlar a barra de status do dispositivo (Expo)
-    "firebase": "^11.8.1", // SDK do Firebase para integração com serviços Firebase
-    "jwt-decode": "^4.0.0", // Biblioteca para decodificar tokens JWT
-    "react": "19.0.0", // Biblioteca React
-    "react-dom": "19.0.0", // React DOM para renderização na web (usado pelo Expo Web)
-    "react-native": "0.79.2", // Framework React Native para desenvolvimento mobile
-    "react-native-pager": "^0.0.3", // Componente de paginação para React Native (provavelmente para carrosséis ou abas)
-    "react-native-safe-area-context": "5.4.0", // Utilitário para lidar com áreas seguras em dispositivos com notch/ilhas
-    "react-native-screens": "~4.10.0", // Otimizações de tela nativas para React Navigation
-    "react-native-svg": "15.11.2", // Biblioteca para renderizar SVGs em React Native
-    "react-native-tab-view": "^4.1.0", // Componente de visualização de abas para React Native
-    "react-native-web": "^0.20.0" // Implementação do React Native para a web
+  "dependencies": {
+    "@expo/metro-runtime": "~5.0.4",
+    "@expo/vector-icons": "^14.1.0",
+    "@react-native-async-storage/async-storage": "2.1.2",
+    "@react-navigation/bottom-tabs": "^7.3.13",
+    "@react-navigation/material-top-tabs": "^7.2.13",
+    "@react-navigation/native": "^7.1.9",
+    "@react-navigation/native-stack": "^7.3.13",
+    "expo": "~53.0.9",
+    "expo-dev-client": "~5.1.8",
+    "expo-navigation-bar": "~4.2.4",
+    "expo-status-bar": "~2.2.3",
+    "firebase": "^11.8.1",
+    "jwt-decode": "^4.0.0",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "react-native": "0.79.2",
+    "react-native-pager": "^0.0.3",
+    "react-native-safe-area-context": "5.4.0",
+    "react-native-screens": "~4.10.0",
+    "react-native-svg": "15.11.2",
+    "react-native-tab-view": "^4.1.0",
+    "react-native-web": "^0.20.0"
   },
-  "devDependencies": { // Dependências de desenvolvimento do projeto (não incluídas no build final)
-    "@babel/core": "^7.20.0" // Núcleo do Babel, usado para transpilar JavaScript
+  "devDependencies": {
+    "@babel/core": "^7.20.0"
   },
-  "private": true // Indica que este pacote não deve ser publicado no npm
+  "private": true
 }

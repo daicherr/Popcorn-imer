@@ -1,12 +1,13 @@
-// Importa a função registerRootComponent da biblioteca expo
-// Esta função é usada para registrar o componente raiz da sua aplicação.
-// É o ponto de entrada principal para uma aplicação Expo.
+// Importa a função registerRootComponent do Expo
+// Essa função registra o componente principal da aplicação
+// e garante que ele seja inicializada tanto no ambiente de desenvolvimento quanto na versão final
 import { registerRootComponent } from 'expo';
 
-// Importa o componente App, que é o componente raiz definido em App.js
+// Importa o componente App, que é o componente principal da aplicação
+// Esse componente geralmente define toda a estrutura e navegação do app
 import App from './App';
 
-// registerRootComponent é responsável por registrar o componente App
-// como o componente principal da aplicação. Isso garante que, quando o
-// JavaScript bundle for carregado, o Expo saiba qual componente renderizar primeiro.
+// Chama a função registerRootComponent, passando o App como argumento
+// Isso diz ao Expo que o componente App é o ponto de entrada da aplicação
+// Sem essa chamada, o aplicativo não iniciaria corretamente
 registerRootComponent(App);

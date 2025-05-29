@@ -1,24 +1,24 @@
 {
-  "cli": { // Configurações para a CLI do EAS (Expo Application Services)
-    "version": ">= 16.6.2", // Versão mínima requerida da EAS CLI
-    "appVersionSource": "remote" // Define que a versão do app (ex: 1.0.0) é gerenciada remotamente pelo EAS
+  "cli": {
+    "version": ">= 16.6.2",
+    "appVersionSource": "remote"
   },
-  "build": { // Configurações para o processo de build do EAS
-    "development": { // Perfil de build para desenvolvimento
-      "developmentClient": true, // Indica que é um build de cliente de desenvolvimento (permite carregar projetos do Expo Go/Dev Menu)
-      "distribution": "internal" // Distribuição interna (ex: TestFlight, Google Play Internal Testing)
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
     },
-    "preview": { // Perfil de build para pré-visualização
-      "distribution": "internal" // Distribuição interna
+    "preview": {
+      "distribution": "internal"
     },
-    "production": { // Perfil de build para produção
-      "autoIncrement": true, // Habilita o incremento automático do número da build (ex: buildNumber no iOS, versionCode no Android)
+    "production": {
+      "autoIncrement": true,
       "android": {
-        "buildType": "apk" // Define o tipo de build para Android como APK (alternativa: "aab" para Android App Bundle)
+        "buildType": "apk"
       }
     }
   },
-  "submit": { // Configurações para o processo de submissão às lojas (EAS Submit)
-    "production": {} // Configurações específicas para submissão do perfil de produção (pode ser deixado vazio para usar padrões)
+  "submit": {
+    "production": {}
   }
 }
