@@ -1,38 +1,38 @@
 {
-  "expo": {
-    "name": "PopCorn",
-    "slug": "PopCorn",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+  "expo": { // Configurações específicas do Expo
+    "name": "PopCorn", // Nome de exibição do aplicativo
+    "slug": "PopCorn", // Slug do aplicativo, usado em URLs do Expo
+    "version": "1.0.0", // Versão atual do aplicativo
+    "orientation": "portrait", // Orientação padrão do aplicativo (retrato)
+    "icon": "./assets/icon.png", // Caminho para o ícone do aplicativo
+    "userInterfaceStyle": "light", // Estilo da interface do usuário (light, dark, automatic)
+    "splash": { // Configurações da tela de splash (abertura)
+      "image": "./assets/splash.png", // Imagem da tela de splash
+      "resizeMode": "contain", // Modo de redimensionamento da imagem de splash
+      "backgroundColor": "#ffffff" // Cor de fundo da tela de splash
     },
-    "newArchEnabled": true,
-    "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.daicheru.PopCorn",
-      "infoPlist": {
-        "ITSAppUsesNonExemptEncryption": false
+    "newArchEnabled": true, // Habilita a Nova Arquitetura do React Native (TurboModules, Fabric)
+    "ios": { // Configurações específicas para iOS
+      "supportsTablet": true, // Indica se o aplicativo suporta tablets iPad
+      "bundleIdentifier": "com.daicheru.PopCorn", // Identificador único do bundle para iOS
+      "infoPlist": { // Configurações adicionais para o Info.plist
+        "ITSAppUsesNonExemptEncryption": false // Declaração sobre uso de criptografia (obrigatório para App Store)
       }
     },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+    "android": { // Configurações específicas para Android
+      "adaptiveIcon": { // Configurações para ícones adaptativos do Android
+        "foregroundImage": "./assets/adaptive-icon.png", // Imagem de primeiro plano do ícone adaptativo
+        "backgroundColor": "#ffffff" // Cor de fundo do ícone adaptativo
       },
-      "edgeToEdgeEnabled": true,
-      "package": "com.daicheru.PopCorn"
+      "edgeToEdgeEnabled": true, // Habilita o modo Edge-to-Edge para Android (renderiza sob as barras de sistema)
+      "package": "com.daicheru.PopCorn" // Nome do pacote Android (identificador único)
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
+    "web": { // Configurações específicas para a plataforma Web (se aplicável)
+      "favicon": "./assets/favicon.png" // Caminho para o favicon para a versão web
     },
-    "extra": {
-      "eas": {
-        "projectId": "51a7c5ff-200c-4c5b-a923-778fde17f611"
+    "extra": { // Campos extras que podem ser acessados via Expo.Constants.expoConfig.extra
+      "eas": { // Configurações para o EAS (Expo Application Services)
+        "projectId": "51a7c5ff-200c-4c5b-a923-778fde17f611" // ID do projeto no EAS
       }
     }
   }
